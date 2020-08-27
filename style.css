@@ -1,0 +1,115 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+header {
+	height: auto;
+	background-color: #0C3C60;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+
+header h1 {
+	color: white;
+	font-size: 30px;
+	padding: 20px 0px 20px 0px;
+}
+
+header h1 span {
+	color: red;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: white;
+}
+
+nav ul li {
+	margin: 0px 16px;
+	font-size: 18px;
+
+}
+
+.menu {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.menu a:hover {
+	color: yellow;
+}
+
+
+
+
+
+.burger-menu-logic p {
+	padding: 3px;
+}
+
+.burger-menu {
+	background-color: gray;
+	display: none;
+}
+
+.burger-menu li {
+	list-style-type: none;
+	padding: 5px;
+	width: auto;
+}
+
+.burger-menu li:hover {
+	background-color: #0C3C60;
+	margin: 0px;
+}
+
+.burger-menu a:hover {
+	color: yellow;
+}
+
+.burger-menu a {
+	text-decoration: none;
+}
+
+#check-burger:hover {
+	color: red;
+	cursor: pointer;
+}
+
+.burger-menu-logic {
+	background-color: silver;
+	margin: 0px;
+	display: none;
+}
+
+@media screen and (max-width: 1130px) {
+	header h1 {
+		font-size: 20px;
+	}
+	nav ul li {
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 630px) {
+	.burger-menu-logic {
+		display: block;
+	}
+	.menu {
+		display: none;
+	}
+	header h1 {
+		display: flex;
+		margin: 0 auto;
+		font-size: 30px;
+	}
+}
